@@ -15,3 +15,14 @@ Ofrece categorías de tareas, incluyendo "Por Hacer", "En Proceso", "Por Testear
 
    ```bash
    git clone https://github.com/tu-usuario/desarrollo-en-argentina.git
+
+2. Instalar json server:
+   
+   ```bash
+   npm install -g json-server
+
+3. Correr json server:
+   
+   ```bash
+   json-server --watch db.json
+   
