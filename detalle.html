@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--CDN Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--CDN Bootstrap ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <!--ICON-->
+        <a class="navbar-brand" href="/">Desarrollo en Argentina</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tareas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="categoriasDropdown">
+                <a class="dropdown-item" href="#PorHacer">Por hacer</a>
+                <a class="dropdown-item" href="#EnProceso">En Proceso</a>
+                <a class="dropdown-item" href="#PorTestear">Por Testear</a>
+                <a class="dropdown-item" href="#Completada">Completada</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="d-md-none">
+            <ul class="navbar-nav me-auto-mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="">Agregar Ticket</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Perfil</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-none d-md-flex gap-2">
+            <a class="nav-item nav-link p-1" href="">
+              <!--Ticket-->
+              <i class="bi bi-journal-plus" style="font-size: 1.2rem"></i>
+            </a>
+            <a class="nav-item nav-link p-1" href="">
+              <!--Usuario-->
+              <i class="bi bi-person" style="font-size: 1.2rem"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="" py-5>
+      <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6">
+            <img
+              class="card-img-top mb-5 mb-md-0"
+              id="ticket-image"
+              src="${ticket.imagen}"
+            />
+          </div>
+
+          <div class="col-md-6">
+
+            <h1 id="ticket-title" class="display-5 fw-bolder"></h1>
+            <div class="f5-5 mb-2">
+              <i class="bi bi-clock"></i>
+              <span id="ticket-time">Tiempo: </span>
+            </div>
+            <div class="f5-5 mb-4">
+              <i class="bi bi-person-circle"></i>
+              <span id="ticket-responsable" >Responsable: </span>
+            </div>
+
+            <div class="btn-group mb-5">
+              <button type="button" class="btn" id="ticket-selected-state"></button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" id="ticket-dropdown">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" onclick="updateSelectedState(this)">Por Hacer</button></li>
+                <li><button class="dropdown-item" onclick="updateSelectedState(this)">En Proceso</button></li>
+                <li><button class="dropdown-item" onclick="updateSelectedState(this)">Por Testear</button></li>
+                <li><button class="dropdown-item" onclick="updateSelectedState(this)">Completada</button></li>
+              </ul>
+            </div>
+
+            <p id="ticket-description" class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Inventore dicta cum voluptatem sed ipsa mollitia, quod impedit
+              pariatur exercitationem eaque harum nam ipsum, praesentium
+              perspiciatis. Qui minus obcaecati id. Impedit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            >Jazmín Rillo</a
+          >
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href=""
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href=""
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href=""
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!--CDN Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="lib/pages/detalle.js"></script>
+  </body>
+</html>

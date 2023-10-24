@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desarrollo en Argentina</title>
+    <!--CDN Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--CDN Bootstrap ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <!--ICON-->
+        <a class="navbar-brand" href="/">Desarrollo en Argentina</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tareas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="categoriasDropdown">
+                <a class="dropdown-item" href="#PorHacer">Por hacer</a>
+                <a class="dropdown-item" href="#EnProceso">En Proceso</a>
+                <a class="dropdown-item" href="#PorTestear">Por Testear</a>
+                <a class="dropdown-item" href="#Completada">Completada</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="d-md-none">
+            <ul class="navbar-nav me-auto-mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="">Ticket</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Perfil</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-none d-md-flex gap-2">
+            <a class="nav-item nav-link p-1" href="">
+              <!--Ticket-->
+              <i class="bi bi-journal-plus" style="font-size: 1.2rem"></i>
+            </a>
+            <a class="nav-item nav-link p-1" href="">
+              <!--Usuario-->
+              <i class="bi bi-person" style="font-size: 1.2rem"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!--MOBILE-->
+          <div
+          class="d-block d-md-none w-100"
+          style=
+            "background-image: url('assets/carrousel/mobile/CAR1.jpg');
+            background-size: cover;
+            height: 500px";
+          >
+          </div>
+          <!--DESKTOP-->
+          <div
+          class="d-none d-md-block w-100"
+          style="
+            background-image: url('assets/carrousel/desktop/CAR1.jpg');
+            background-size: cover;
+            height: 500px";
+          >
+          </div>
+          <div class="carousel-caption d-block text-start">
+            <h3 class="fs-1">Somos el mejor equipo de Aplicaciones Ágiles</h3>
+            <p>Te Brindamos todo el asesorameinto en Desarrollo de Software</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#selector-categorias"
+                >Explorar categorías</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--MOBILE-->
+          <div
+          class="d-block d-md-none w-100"
+          style="
+            background-image: url('assets/carrousel/mobile/CAR2.jpg');
+            background-size: cover;
+            height: 500px";
+          >
+          </div>
+          <div
+          class="d-none d-md-block w-100"
+          style="
+            background-image: url('assets/carrousel/desktop/CAR2.jpg');
+            background-size: cover;
+            height: 500px";
+          >
+          </div>
+          <div class="carousel-caption d-block text-center">
+            <h3 class="fs-1">El camino más ágil hacia la productividad</h3>
+            <p>Logra más en menos tiempo y con menos esfuerzo</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--MOBILE-->
+          <div
+          class="d-block d-md-none w-100"
+          style="
+            background-image: url('assets/carrousel/mobile/CAR3.jpg');
+            background-size: cover;
+            height: 500px";
+          >
+          </div>
+          <div
+          class="d-none d-md-block w-100"
+          style="
+            background-image: url('assets/carrousel/desktop/CAR3.jpg');
+            background-size: cover;
+            height: 500px";
+          >
+          </div>
+          <div class="carousel-caption d-block text-end">
+            <h3 class="fs-1">Clasificación de tareas</h3>
+            <p>
+              Nuestra plataforma te permite optimizar tu flujo de trabajo a
+              través de metodologías ágiles, simplificando la creación y
+              clasificación de tareas.
+            </p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#selector-categorias"
+                >Agregar ticket</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <main>
+      <!--PRODUCTOS-->
+      <!--SELECTOR DE CATEGORÍAS-->
+      <section class="container" id="selector-categorias" style="margin-bottom: 50px;">
+        <p class="fs-2 fw-bolder" style="margin: 2rem 0rem;">Seleccionar categoría</p>
+        <div class="row gap-4">
+          <div class="col d-flex justify-content-center p-0">
+            <a
+              href="#PorHacer"
+              class="border border-3 border-primary d-flex gap-1 align-items-center rounded-5 p-2 text-decoration-none"
+              onmouseover="this.style.backgroundColor='#99C5D4';"
+              onmouseout="this.style.backgroundColor='transparent';"
+              >
+              <img
+                src="/assets/categories/TODO.png"
+                alt="Por hacer"
+                style="width: 25px; height: 25px"
+                />
+                <span class="fs-5 text-dark-emphasis">Por hacer</span>
+              </a>
+            </div>
+          <div class="col d-flex justify-content-center p-0">
+            <a
+              href="#EnProceso"
+              class="border border-3 border-danger d-flex gap-1 align-items-center rounded-5 p-2 text-decoration-none"
+              onmouseover="this.style.backgroundColor='#E3A9A2';"
+              onmouseout="this.style.backgroundColor='transparent';"
+            >
+              <img
+                src="/assets/categories/INPROGRESS.png"
+                alt="En Proceso"
+                style="width: 25px; height: 25px"
+              />
+              <span class="fs-5 text-dark-emphasis">En Proceso</span>
+            </a>
+          </div>
+          <div class="col d-flex justify-content-center p-0">
+            <a
+              href="#PorTestear"
+              class="border border-3 border-secondary d-flex gap-1 align-items-center rounded-5 p-1 text-decoration-none"
+              onmouseover="this.style.backgroundColor='#C1A2E3';"
+              onmouseout="this.style.backgroundColor='transparent';"
+            >
+              <img
+                src="/assets/categories/TESTING.png"
+                alt="Por Testear"
+                style="width: 25px; height: 25px"
+              />
+              <span class="fs-5 text-dark-emphasis">Por Testear</span>
+            </a>
+          </div>
+          <div class="col d-flex justify-content-center p-0">
+            <a
+              href="#Completada"
+              class="border border-3 border-success d-flex gap-1 align-items-center rounded-5 p-1 text-decoration-none"
+              onmouseover="this.style.backgroundColor='#B5E3A2';"
+              onmouseout="this.style.backgroundColor='transparent';"
+            >
+              <img
+                src="/assets/categories/DONE.png"
+                alt="Completada"
+                style="width: 25px; height: 25px"
+              />
+              <span class="fs-5 text-dark-emphasis">Completada</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--CATEGORÍAS Tareas-->
+      <section class="container-fluid" id="categorias">
+        <section class="text-center mb-5" id="PorHacer">
+          
+          <h3 class="display-5 mb-3" style="color: #3C53E7; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            <img
+            src="/assets/categories/TODO.png"
+            alt="Por hacer"
+            style="width: 60px; height: 60px"
+            />
+            Por Hacer</h3>
+      
+          <div
+            id="contenedor-por-hacer"
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+          </div>
+        </section>
+
+        <section class="text-center mb-5" id="EnProceso">
+          <h3 class="display-6 mb-3" style="color: #E34838; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            <img
+            src="/assets/categories/INPROGRESS.png"
+            alt="Por hacer"
+            style="width: 60px; height: 60px"
+            />
+            En Proceso
+          </h3>
+          <div
+            id="contenedor-en-proceso"
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+          </div>
+        </section>
+
+        <section class="text-center mb-5" id="PorTestear">
+          <h3 class="display-6 mb-3" style="color: #8620B9; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            <img
+            src="/assets/categories/TESTING.png"
+            alt="Por hacer"
+            style="width: 60px; height: 60px"
+            />
+            Por testear
+          </h3>
+          <div
+            id="contenedor-por-testear"
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+          </div>
+        </section>
+
+        <section class="text-center mb-5" id="Completada">
+          <h3 class="display-6 mb-3" style="color: #31E863; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            <img
+            src="/assets/categories/DONE.png"
+            alt="Completada"
+            style="width: 60px; height: 60px"
+            />
+            Completada
+          </h3>
+          <div
+            id="contenedor-completada"
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            >Jazmín Rillo</a
+          >
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >&copy; 2023</span
+          >
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href=""
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href=""
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href=""
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!--CDN Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="lib/pages/home.js"></script>
+    <script type="module" src="lib/pages/detalle.js"></script>
+
+  </body>
+</html>

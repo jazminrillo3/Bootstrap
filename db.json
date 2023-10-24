@@ -1,0 +1,85 @@
+{
+  "tareas": [
+    {
+      "id": 1,
+      "titulo": "Boceto Homepage",
+      "descripcion": "Realizar en Figma el boceto de la homepage: navbar, carrusel, categorias, productos",
+      "imagen": "https://img.freepik.com/free-vector/simple-website-tamplate_23-2147535943.jpg?w=740&t=st=1698077347~exp=1698077947~hmac=f44d6a349550f7ba8c2432437d031f61e7c38b17dbca6e2529eb9e2ce840f16e",
+      "tiempo": 1,
+      "responsable": "Jazmin Rillo",
+      "estado": "Por Hacer"
+    },
+    {
+      "id": 2,
+      "titulo": "Boceto detalle producto",
+      "descripcion": "Realizar en figma el boceto del detalle del producto: imagen, titulo, descripcion, precio, boton de añadir al carrito",
+      "imagen": "https://img.freepik.com/free-photo/woman-enjoy-online-shopping_53876-71210.jpg?w=740&t=st=1698077418~exp=1698078018~hmac=f24c5614bbb974d225677321a3a7aa1f135a3b5d4a5eb64a4e3dcc2963d086cc",
+      "tiempo": 1,
+      "responsable": "Luca Zamperoni",
+      "estado": "Por Hacer"
+    },
+    {
+      "id": 3,
+      "titulo": "Boceto Login",
+      "descripcion": "Pedir email y contraseña y acceder al usuario",
+      "imagen": "https://img.freepik.com/free-vector/website-user-login-page-template-design_1017-30786.jpg?w=740&t=st=1698081372~exp=1698081972~hmac=fb996efdbac9be862165649e1998f6985b7c6403d44d8f59b2da37ec955dda66",
+      "tiempo": 1,
+      "responsable": "Luca Zamperoni",
+      "estado": "En Proceso"
+    },
+    {
+      "id": 4,
+      "titulo": "Boceto Registro",
+      "descripcion": "Abrir un formulario de registro que pida todos los datos del cliente, y cree un usuario",
+      "imagen": "https://img.freepik.com/free-vector/modern-online-registration-compositio_23-2147993866.jpg?w=740&t=st=1698081407~exp=1698082007~hmac=427a9f36cc914c79a2cbc20491d91844e98c942a00edd9b9315219dd0dfd4cf4",
+      "tiempo": 1,
+      "responsable": "Jazmin Rillo",
+      "estado": "En Proceso"
+    },
+    {
+      "id": 5,
+      "titulo": "Crear endpoints en Java",
+      "descripcion": "Crear endpoints básicos: GET, POST, PUT de los productos, clientes, categorías, rubros, ingredientes, etc.",
+      "imagen": "https://img.freepik.com/free-vector/flat-design-api-illustration_23-2149364434.jpg?t=st=1698154106~exp=1698154706~hmac=323024bd485c171416bd5fe24e2cc9ba9fb51499266d3f74a388800d4a13c3fe",
+      "tiempo": 1,
+      "responsable": "Abril Sabatini",
+      "estado": "Por Testear"
+    },
+    {
+      "id": 6,
+      "titulo": "Realizar maquetado de modelo entidad-relación",
+      "descripcion": "Realizar el modelo de entidad-relación de nuestro proyecto. Definir las entidades, sus atributos y cómo estarán conectadas.",
+      "imagen": "data:image/jpeg;base64,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",
+      "tiempo": 2,
+      "responsable": "Luca Zamperoni",
+      "estado": "Completada"
+    },
+    {
+      "id": 7,
+      "titulo": "Elegir estilos",
+      "descripcion": "Definir paleta de colores para la página, tipografías, colores de botones, títulos, etc..",
+      "imagen": "https://img.freepik.com/free-vector/graphic-design-elements-collection-flat-style_23-2147780634.jpg?w=740&t=st=1698152059~exp=1698152659~hmac=fe6d9ac5e998a5cc5f6800c455c1882a302709b3570788431035b2d084f4e0d0",
+      "tiempo": 1,
+      "responsable": "Jazmin Rillo",
+      "estado": "Completada"
+    },
+    {
+      "id": 8,
+      "titulo": "Comenzar a definir las entidades en Java",
+      "descripcion": "Definir las clases, sus atributos y las relaciones entre ellas.",
+      "imagen": "https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=740&t=st=1698152127~exp=1698152727~hmac=eaa08c6a4290368e4aee8566d7e5b1151206d1f3dae8033e5fac20143cd304e4",
+      "tiempo": 1,
+      "responsable": "Jazmin Rillo",
+      "estado": "Completada"
+    },
+    {
+      "id": 9,
+      "titulo": "Crear base de datos",
+      "descripcion": "Investigar cual es la base de datos que más nos conviene, que podamos conectarla a nuestra API, que sea gratuita y crearla.",
+      "imagen": "https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4886.jpg?w=740&t=st=1698152186~exp=1698152786~hmac=4cd9241342e8063a1ac02d27aad98a3c321ad3cca4b36cfada198029f43213c1",
+      "tiempo": 1,
+      "responsable": "Abril Sabatini",
+      "estado": "Completada"
+    }
+  ]
+}
